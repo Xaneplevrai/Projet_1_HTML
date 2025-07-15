@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title> Projet Tour F </title>
+        <link rel="icon" href="02-Tour-Abidjan@BESIX.ico" type="image/x-icon"/>
     </head>
     <body style="text-align: center;">
         <header>
-            <h1> La tour F : <br> La tour la plus haut d'Afrique </h1>
+            <h1> La tour F : <br> La tour la plus haut d'Afrique </h1><br>
             <nav>
+                <a href="#About">[About]</a>
+                <a href="#Work">[Work]</a>
+                <a href="#Resume">[Resume]</a>
+                <a href="#Contact">[Contact]</a><br>
             </nav>
         </header>
         <main>
             <section>
-                <h2>A propos du projet :</h2>
+                <a name="About"></a>
+                <h2>About</h2>
                 <p>
                     L'Etat de Côte d'Ivoire a pour projet de concevoir une tour nommée la "tour F"; 
                     située au plateau, cette tour fera plus de 400 mètres, 
@@ -19,6 +25,58 @@
                 </p>
                 <img src="Tour-F.png" alt="Tour-F" width="720" height="360">
             </section>
+
+            <section>
+                <a name="Work"></a>
+                <h2>Work</h2>
+                <p>
+                    La tour F répond à un impératif économique de gestion pour l'État ivoirien. 
+                    Il s'agit de faire face à l'accroissement de ses besoins en bureaux administratifs<br>
+                    tout en rassemblant les services épars dans la ville et en réduisant la charge de loyers.                     
+                </p>
+                <img src="02-Tour-Abidjan@BESIX.jpg" alt="Tour-F">
+            </section>
+
+            <section>
+                <a name="Resume"></a>
+                <h2>Resume</h2>
+                <p>
+                    Le Projet de tour F est donc un projet de développement économique important en Côte d'Ivoire                     
+                </p>
+                <img src="ImageNewsGet.jpg" alt="Tour-F">
+            </section>
+
+            <section>
+                <a name="Contact"></a>
+                <h2>Contact</h2>
+                <p>N'hésiter pas à nous contacter pour plus d'information à propos de ce projet</p><br>
+                <form>
+
+                    <label>Nom:</label><br>
+                    <input type="text" name="first name" placeholder="Ecriver votre nom ici" /><br><br>
+                    
+                    <label>Prénom:</label><br>
+                    <input type="text" name="first name" placeholder="Ecriver votre prénom ici" /><br><br>
+
+
+                    <label>Numéro de téléphone:</label><br>
+                    <input type="number" name="number" placeholder="xx xx xx xx xx" /><br><br>
+      
+                    <label>Date de naissance:</label><br>
+                    <input type="date" name="birthday" /><br><br>
+
+                    <label>Domaine d'activité</label><br>
+                    <select>
+                        <option value="Construction">Construction</option>
+                        <option value="Informatique">Informatique</option>
+                        <option value="Economie">Economie</option>
+                        <option value="Presse">Presse</option>
+                        <option value="Judiciaire">Judiciaire</option>
+                        <option value="Autres">Autres</option>
+                    </select><br><br>
+                    <button type="reset">Réinitialiser</button><button type="submit">Envoyer</button>
+                </form>
+            </section> 
         </main>
     </body>
 </html>
