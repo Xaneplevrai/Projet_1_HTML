@@ -1,0 +1,62 @@
+ALGORITHM AnalysePhrase
+VAR
+    phrase : Chaîne
+    longueur_phrase, nombre_de_mots, nombre_voyelles : Entier
+BEGIN
+    Ecrire("Écrivez votre phrase dans le champ ci-après : ")
+    Lire(phrase)
+
+    longueur_phrase <- Longueur_Chaine(phrase)
+    nombre_de_mots <- Compter_Mots(phrase)
+    nombre_voyelles <- Compter_Voyelles(phrase)
+
+    Ecrire("La phrase-ci a ", longueur_phrase, " caractères, ", nombre_de_mots, " mots, et ", nombre_voyelles, " voyelles.")
+END
+
+Fonction Longueur_Chaine(chaine : Chaîne) : Entier
+VAR
+    compteur : Entier
+    i : EntieR
+BEGIN
+    compteur <- 0
+    Pour i de 1 à Longueur(chaine) Faire
+        compteur <- compteur + 1
+    FinPour
+    Retourner compteur
+END Fonction
+
+Fonction Compter_Mots(chaine : Chaîne) : Entier
+VAR
+    i, mots : Entier
+    dans_mot : Booléen
+    c : Caractère
+BEGIN
+    mots <- 0
+    dans_mot <- Faux
+
+    Pour i de 1 à Longueur(chaine) Faire
+        c <- chaine[i]
+        Si c <> ' ' ET NON dans_mot Alors
+            dans_mot <- Vrai
+            mots <- mots + 1
+        Sinon Si c = ' ' Alors
+            dans_mot <- Faux
+        FinSi
+    FinPour
+    Retourner mots
+END Fonction
+
+Fonction Compter_Voyelles(chaine : Chaîne) : Entier
+VAR
+    i, nb : Entier
+    c : Caractère
+BEGIN
+    nb <- 0
+    Pour i de 1 à Longueur(chaine) Faire
+        c <- chaine[i]
+        Si c = 'a' OU c = 'e' OU c = 'i' OU c = 'o' OU c = 'u' OU c = 'A' OU c = 'E' OU c = 'I' OU c = 'O' OU c = 'U' Alors
+            nb <- nb + 1
+        FinSi
+    FinPour
+    Retourner nb
+END Fonction
