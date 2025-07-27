@@ -1,0 +1,125 @@
+body{
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.Acc{
+    background-color: #eef1ff;
+}
+
+
+a{
+    color: gray;
+    text-decoration-line: none
+}
+
+hr{
+    margin: 0%;
+}
+
+.navbar_top{
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    div{
+        display: inline-block;
+    }
+}
+
+.nb_recherche{
+    p{
+        display: inline;
+        margin-left: 15px;
+    }
+}
+
+h1{
+    font-size: 50px;
+}
+
+.Description{
+    background-color: #eef1ff;
+} 
+
+.bigbox {
+    display: inline-block;
+    margin: 30px;
+}
+.box{
+    border:2px solid #34495e;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: white;
+    display: inline-block;
+    margin: 5px;
+    margin-top: -20px;
+    p{
+        font-size: 15px;
+    }
+}
+.Carac{
+    position: relative;
+}
+
+.Descri{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    transform: translate(50%, 50%);
+    font-size: 150%;
+}
+
+.img_a{
+    border-radius: 15px;
+}
+
+.navbar_bottom{
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.Ctc{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block
+}
+
+form{
+    .my_field{
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 2px solid #e2e2e2 ;
+        background-color: #f1f1f1 ;
+    }
+    .my_buttom{
+        border: 2px solid #e2e2e2;
+        background-color: #f1f1f1;
+        padding: 5px;
+        border-radius: 5px
+    }
+}
+
+.my_field:hover{
+    border-color: rgb(170, 170, 170);
+}
+
+.sousformu{
+    display: inline-block;
+}
+
+.Vers_contact{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    a{
+        color: black;
+    }
+}
+
+.Vers_contact:hover{
+    background-color: rgb(231, 231, 231);
+}
